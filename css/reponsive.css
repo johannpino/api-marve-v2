@@ -1,0 +1,28 @@
+@media only screen and (max-width: 992px) {
+
+
+}
+@media only screen and (max-width: 768px) {
+
+  .img-logo {
+    margin: 5px auto ;
+    width: 230px;
+    float: left;
+  }
+  #app-container{
+    padding-top:120px;
+  }
+  .search-form input[type="text"]{
+    padding:10px;
+    width: 85%;
+    font-size: 18px;
+    color: red;
+    height: 50px;
+    border: 0px;
+    border-radius: 0;
+    float: left;
+  }
+  .search{
+    height: 50px;
+  }
+ }
