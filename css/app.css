@@ -33,7 +33,7 @@ main{
   position: fixed;
   background-color: rgb(0, 0, 0);
   transition: all 2s ;
-  right: -200;
+  right: 0;
 }
 .bg-marvel.disable{
   right: -200vw;
@@ -48,3 +48,10 @@ main{
   max-height: 600px;
   font-size: 1px;
 }
+
+#app{
+  position: absolute;
+  margin-top: 100px;
+  width: 100%;
+}
+
