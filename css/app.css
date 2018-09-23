@@ -36,7 +36,7 @@ main{
   right: 0;
 }
 .bg-marvel.disable{
-  right: -200vw;
+  right: -100vw;
 }
 .loader{
   background-image: url("../img/marvel.gif");
@@ -55,3 +55,53 @@ main{
   width: 100%;
 }
 
+.masonry--h, .masonry--v {
+  counter-reset: brick;
+}
+
+.masonry--h {
+  flex-flow: row wrap;
+}
+.masonry {
+  display: flex;
+  width: 100%;
+}
+.masonry-brick--h {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+}
+.masonry-brick {
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 8px;
+  background-color: #333;
+  color: white;
+  position: relative;
+}
+.masonry-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(20%);
+}
+.masonry-brick--h:nth-child(2n+1) {
+  width: 200px;
+}
+.masonry-div-p{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  z-index: 1000;
+  color: #fff;
+}
+.masonry-div-p .masonry-p{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 30px;
+  letter-spacing: 16px;
+  font-weight: bold;
+}
