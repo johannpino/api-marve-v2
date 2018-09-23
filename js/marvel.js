@@ -7,7 +7,7 @@ class Marvel{
     async obtenerApiMarvel(){
         const ts = Date.now(),
 		 hash = MD5(ts + privateKey + publicKey),
-         url = `http://gateway.marvel.com/v1/public/characters?ts=${ts}&limit=50&apikey=${publicKey}&hash=${hash}`;
+         url = `https://gateway.marvel.com/v1/public/characters?ts=${ts}&limit=50&apikey=${publicKey}&hash=${hash}`;
          
          const urlObtenerApi = await fetch(url);
          const results = urlObtenerApi.json();
@@ -18,7 +18,7 @@ class Marvel{
     async obtenerResultadoBusqueda(name){
         const ts = Date.now(),
 		 hash = MD5(ts + privateKey + publicKey),
-        url = `http://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&limit=100&apikey=${publicKey}&hash=${hash}`;
+        url = `https://gateway.marvel.com/v1/public/characters?nameStartsWith=${name}&ts=${ts}&limit=100&apikey=${publicKey}&hash=${hash}`;
 
         const urlResultado = await fetch(url);
         const results = urlResultado.json();
